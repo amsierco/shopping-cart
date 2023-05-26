@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&family=Skranji&display=swap');
+
+html,
+body,
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  /* Variables */
+  --text: #000;
+  --primary: #19A7CE;
+  --secondary: #AFD3E2;
+  --accent: #146C94;
+  --background: #F6F1F1;
+
+  background-color: var(--background);
+  color: var(--text);
+  font-family: Poppins, 'sans-serf';
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
