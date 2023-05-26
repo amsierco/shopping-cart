@@ -14,7 +14,7 @@ const CatagoryCard = ({title, image, id}) => {
         <Link to={'/products/'+id} className="catagory-card" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
             <img 
                 src={image} 
-                alt="" 
+                alt={id} 
                 className="catagory-image" 
                 id={id}
                 style={catagoryStyle}
