@@ -23,4 +23,5 @@
     align-items: center;
     justify-content: center;
     font-size: 5rem;
+    color: var(--primary);
 }

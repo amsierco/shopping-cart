@@ -16,6 +16,7 @@ body,
   --secondary: #AFD3E2;
   --accent: #146C94;
   --background: #F6F1F1;
+  --gpad: 1rem 2rem 1rem 2rem;;
 
   background-color: var(--background);
   color: var(--text);
@@ -29,4 +30,15 @@ a {
 #root {
   width: 100vw;
   height: 100vh;
+}
+
+button {
+  background-color: transparent;
+  border-width: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 0;
 }

@@ -1,0 +1,54 @@
+.products {
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: var(--gpad);
+}
+
+.products > header {
+    text-align: center;
+}
+
+.products .catagory-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 400px));
+    grid-template-rows: repeat(auto, minmax(200px, 400px));
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.catagory-card {
+    position: relative;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catagory-image,
+.catagory-title {
+    position: absolute;
+    overflow: hidden;
+}
+
+.catagory-card .catagory-image {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.catagory-title {
+    background: transparent;
+}
+
+/* Specific catagory image adjustments */
+.catagory-card #women-apparal { object-position: 0 10%; }
+.catagory-card #essentials { object-position: 0 70%; }
+.catagory-card #nutrition { object-position: 50% 0; }
+
+.catagory-card:hover {
+    transform: translateY(-2px);
+}

@@ -6,9 +6,9 @@ import '../styles/navbar.css';
 const Nav = () => {
     return (
         <div className="navbar">
-            <div className="logo">
-                Fancy Logo
-            </div>
+            <h2 className="logo">
+                Elevation Running
+            </h2>
             <nav className="nav-links">
                 <Link to="/">Home</Link>
                 <Link to="/products">Products</Link>
