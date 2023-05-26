@@ -18,8 +18,13 @@ const Products = ({type='overview'}) => {
     })();
 
     function headerFromID(id){
-        //Go through id removeing '-' and Capitalizing First Letters
-        return 'TEMP';
+        let tempArr = id.replace('-', ' ').split(' ');
+        let final = '';
+        for(let i=0; i<tempArr.length; i++){
+            final += tempArr[i].charAt(0).toUpperCase().concat(tempArr[i].slice(1));
+            if(i+1<tempArr.length){ final += ' '; }
+        }
+        return final;
     }
     
     const specificProduct = (obj) => {
