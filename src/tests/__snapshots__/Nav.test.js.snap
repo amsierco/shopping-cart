@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav component renders home nav link 1`] = `
+<div>
+  <div
+    class="navbar"
+  >
+    <div
+      class="logo"
+    >
+      Fancy Logo
+    </div>
+    <nav>
+      <a
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        href="/products"
+      >
+        Products
+      </a>
+      <a
+        href="/"
+      >
+        Cart
+      </a>
+    </nav>
+  </div>
+</div>
+`;
