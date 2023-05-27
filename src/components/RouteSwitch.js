@@ -9,12 +9,12 @@ import '../styles/global.css';
 
 const RouteSwitch = () => {
   const [cart, updateCart] = useState([]);
-  
+  const [isCartActive, toggle] = useState(false);
 
 
   return (
     <BrowserRouter>
-      <Nav cart={cart} />
+      <Nav cart={cart} isCartActive={isCartActive} toggle={toggle}/>
       <Routes>
         <Route path="/" element={<Homepage />}/>      
         <Route path="/products" element={<Products type={'overview'} cart={cart} updateCart={updateCart}/>}/>
@@ -25,7 +25,7 @@ const RouteSwitch = () => {
         <Route path="/products/essentials" element={<Products type={'essentials'} cart={cart} updateCart={updateCart}/>}/>
         <Route path="/products/nutrition" element={<Products type={'nutrition'} cart={cart} updateCart={updateCart}/>}/>
       </Routes>
-      <Cart cart={cart} updateCart={updateCart}/>
+      <Cart cart={cart} updateCart={updateCart} isCartActive={isCartActive} toggle={toggle}/>
     </BrowserRouter>
   );
 };

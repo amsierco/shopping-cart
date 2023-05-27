@@ -54,22 +54,22 @@ export const catagory = [
 export const maleApparal = [
     { name: 'Men\'s Brooks Sherpa 3" Split Short', image: ma1, price: 54.00, key: 'ma1', },
     { name: 'Men\'s Brooks Sherpa 7" 2-in-1 Short ', image: ma2, price: 68.00, key: 'ma2', },
-    { name: 'SAXX Hightail 5" 2N1 Short - SXSP01L-GRA', image: ma3, price: 68.00, key: 'ma3', },
+    { name: 'SAXX Hightail 5" 2N1 Short', image: ma3, price: 68.00, key: 'ma3', },
     { name: 'Men\'s Brooks Atmosphere Short Sleeve 2.0', image: ma4, price: 48.00, key: 'ma4', }
 ];
 
 export const femaleApparal = [
     { name: 'Women\'s Brooks Method 5" Short Tight', image: fa1, price: 54.00, key: 'fa1', },
-    { name: 'Women\'s New Balance Accelerate Short 2.5 inch - WS01207', image: fa2, price: 35.00, key: 'fa2', },
+    { name: 'Women\'s New Balance Accelerate Short 2.5 inch', image: fa2, price: 35.00, key: 'fa2', },
     { name: 'Women\'s Brooks Sprint Free Tank 2.0', image: fa3, price: 42.00, key: 'fa3', },
     { name: 'Women\'s Brooks Momentum Thermal Tight', image: fa4, price: 95.00, key: 'fa4', }
 ];
 
 export const footwear = [
-    { name: 'Men\'s Altra Escalante 3 - AL0A7R6M-220', image: fw1, price: 140.00, key: 'fw1', },
-    { name: 'Men\'s Nike Invincible 3 - FJ3889-100', image: fw2, price: 180.00, key: 'fw2', },
-    { name: 'Women\'s HOKA Clifton 9 - 1127896-BWHT', image: fw3, price: 145.00, key: 'fw3', },
-    { name: 'Women\'s HOKA Mach 5 - 1127894-ICYC', image: fw4, price: 140.00, key: 'fw4', }
+    { name: 'Men\'s Altra Escalante 3', image: fw1, price: 140.00, key: 'fw1', },
+    { name: 'Men\'s Nike Invincible 3', image: fw2, price: 180.00, key: 'fw2', },
+    { name: 'Women\'s HOKA Clifton 9', image: fw3, price: 145.00, key: 'fw3', },
+    { name: 'Women\'s HOKA Mach 5', image: fw4, price: 140.00, key: 'fw4', }
 ];
 
 export const watches = [
@@ -80,7 +80,7 @@ export const watches = [
 ];
 
 export const essentials = [
-    { name: 'Women\'s CEP Calf Sleeve 4.0 WS205R', image: e1, price: 44.95, key: 'e1', },
+    { name: 'Women\'s CEP Calf Sleeve 4.0', image: e1, price: 44.95, key: 'e1', },
     { name: 'Men\'s CEP Compression Calf Sleeve 4.0', image: e2, price: 40.00, key: 'e2', },
     { name: 'Brooks Ghost Lite Crew 2-Pack', image: e3, price: 24.00, key: 'e3', },
     { name: 'Nike Dri-Fit Aerobill Featherlight Perforated Running Cap', image: e4, price: 30.00, key: 'e4', }
