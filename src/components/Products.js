@@ -44,11 +44,11 @@ const Products = ({type='overview'}) => {
         <main className="products">
             {type === 'overview' ? overview : null}
             {type === 'male-apparal' ? specificProduct(DATA.maleApparal) : null}
-            {type === 'female-apparal' ? specificProduct() : null}
-            {type === 'footwear' ? specificProduct() : null}
-            {type === 'watches' ? specificProduct() : null}
-            {type === 'essentials' ? specificProduct() : null}
-            {type === 'nutrition' ? specificProduct() : null}
+            {type === 'female-apparal' ? specificProduct(DATA.femaleApparal) : null}
+            {type === 'footwear' ? specificProduct(DATA.footwear) : null}
+            {type === 'watches' ? specificProduct(DATA.watches) : null}
+            {type === 'essentials' ? specificProduct(DATA.essentials) : null}
+            {type === 'nutrition' ? specificProduct(DATA.nutrition) : null}
         </main>
     </>);
 }

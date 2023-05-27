@@ -7,6 +7,7 @@ const CatagoryCard = ({title, image, id}) => {
     const handleLeave = () => { setHover(false); }
     const catagoryStyle = {
         transform: isHover ? 'scale(1.05)' : 'scale(1)',
+        filter: isHover ? 'brightness(55%)' : 'brightness(75%)',
         transition: 'all 150ms ease-in',
     };
     

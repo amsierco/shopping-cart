@@ -6,7 +6,6 @@
     justify-content: space-between;
     padding: var(--gpad);
     border-bottom: 2px solid #000;
-    position: sticky;
 }
 
 .navbar .nav-links {
@@ -18,4 +17,8 @@
 .nav-links > * {
     padding: 0 .5rem 0 .5rem;
     cursor: pointer;
+}
+
+.logo {
+    font-size: 2rem;
 }
