@@ -2,10 +2,11 @@
     position: absolute;
     right: 0;
     top: 0; 
-    width: 600px;
-    height: fit-content;
     z-index: 5;
     padding: var(--gpad);
+    display: inline-block;
+    width: 600px;
+    height: fit-content;
 }
 
 .cart-container .title {
@@ -21,7 +22,7 @@
 .cart-item {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 6fr 2fr;
+    grid-template-columns: 1fr 6fr 2fr 1fr;
     padding: .1rem .5rem 0 .5rem;
     align-items: center;
 }
@@ -88,4 +89,34 @@
 .closebtn:hover {
     transform: translateY(1px);
     transition: all 150ms ease-in;
+}
+
+.cart-active {
+    animation: slide-in 500ms ease-in-out;
+    animation-fill-mode: forwards;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.cart-deactive {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    animation: slide-out 500ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in {
+    from {transform: translateX(100%);}
+    to {transform: translateX(0%);}
+}
+
+@keyframes slide-out {
+    from {transform: translateX(0%);}
+    to {transform: translateX(100%); display: none; box-shadow: none;}
+}
+
+#root.preload * {
+    animation-duration: 0s !important;
+}
+
+.cart-remove {
+    cursor: pointer;
 }

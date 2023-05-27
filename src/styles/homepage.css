@@ -7,9 +7,6 @@
 .hero {
     position: relative;
     height: 100vh;
-    /* height: 100%;
-    min-height: 700px;
-    max-height: 900px; */
 }
 
 .homepage .hero-background {
@@ -19,6 +16,7 @@
     width: 100%;
     height: 100%;
     object-position: 0 60%;
+    filter: brightness(80%);
 }
 
 .hero-text {
@@ -34,7 +32,7 @@
 }
 
 .hero-text * {
-    color: var(--primary);
+    color: #fff;
     background: inherit;
 }
 
@@ -50,8 +48,7 @@
     border-radius: .5rem;
 }
 
-/* .explore {
-    height: 100%; 
-    min-height: 200px;
-    max-height: 400px;
-} */
+.hero-text .catalog-link:hover {
+    transform: translateY(2px);
+    transition: all 150ms ease-in;
+}

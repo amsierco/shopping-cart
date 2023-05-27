@@ -5,7 +5,6 @@ import * as DATA from "../data/data";
 import '../styles/product.css';
 
 const Products = ({type='overview', cart, updateCart}) => {
-    
     const overview = (() => {
         return (<>
         <header><h1>Categories</h1></header>
