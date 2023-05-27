@@ -1,4 +1,8 @@
-const ProductCard = ({title, image, price, id}) => {
+const ProductCard = ({title, image, price, id, data, cart, updateCart}) => {
+
+    const clickHandler = () => {
+        updateCart([...cart, data]);
+    }
 
     return (
         <div className="product-card">
@@ -14,6 +18,7 @@ const ProductCard = ({title, image, price, id}) => {
                 <h2 className="product-title">{title}</h2>
                 <h3 className="product-price">{'$'+price}</h3>
             </div>
+            <button onClick={clickHandler}>Add To Cart</button>
         </div>
     );
 }

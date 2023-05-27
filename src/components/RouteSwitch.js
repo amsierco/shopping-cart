@@ -1,69 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from "./Nav";
 import Homepage from "./Homepage";
 import Products from "./Products";
 import Cart from "./Cart";
-import { useState, createContext } from "react";
 
 import '../styles/global.css';
-
-const CartContext = createContext();
 
 const RouteSwitch = () => {
   const [cart, updateCart] = useState([]);
   
+
+
   return (
     <BrowserRouter>
+      <Nav cart={cart} />
       <Routes>
-        <Route path="/" element={<CartContext.Provider value={cart}>
-            <Nav />
-            <Homepage />  
-            <Cart />
-        </CartContext.Provider>}/>
-
-        <Route path="/products" element={<>
-            <Nav />
-            <Products type={'overview'}/>
-            <Cart />
-        </>}/>
-
-        <Route path="/products/male-apparal" element={<>
-            <Nav />
-            <Products type={'male-apparal'}/>
-            <Cart />
-        </>}/>
-
-        <Route path="/products/female-apparal" element={<>
-            <Nav />
-            <Products type={'female-apparal'}/>
-            <Cart />
-        </>}/>
-        
-        <Route path="/products/footwear" element={<>
-            <Nav />
-            <Products type={'footwear'}/>
-            <Cart />
-        </>}/>
-
-        <Route path="/products/watches" element={<>
-            <Nav />
-            <Products type={'watches'}/>
-            <Cart />
-        </>}/>
-
-        <Route path="/products/essentials" element={<>
-            <Nav />
-            <Products type={'essentials'}/>
-            <Cart />
-        </>}/>
-        
-        <Route path="/products/nutrition" element={<>
-            <Nav />
-            <Products type={'nutrition'}/>
-            <Cart />
-        </>}/>
+        <Route path="/" element={<Homepage />}/>      
+        <Route path="/products" element={<Products type={'overview'} cart={cart} updateCart={updateCart}/>}/>
+        <Route path="/products/male-apparal" element={<Products type={'male-apparal'} cart={cart} updateCart={updateCart}/>}/>
+        <Route path="/products/female-apparal" element={<Products type={'female-apparal'} cart={cart} updateCart={updateCart}/>}/>
+        <Route path="/products/footwear" element={<Products type={'footwear'} cart={cart} updateCart={updateCart}/>}/>
+        <Route path="/products/watches" element={<Products type={'watches'} cart={cart} updateCart={updateCart}/>}/>
+        <Route path="/products/essentials" element={<Products type={'essentials'} cart={cart} updateCart={updateCart}/>}/>
+        <Route path="/products/nutrition" element={<Products type={'nutrition'} cart={cart} updateCart={updateCart}/>}/>
       </Routes>
+      <Cart cart={cart} updateCart={updateCart}/>
     </BrowserRouter>
   );
 };

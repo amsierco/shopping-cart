@@ -3,7 +3,8 @@ import React from "react";
 
 import '../styles/navbar.css';
 
-const Nav = () => {
+const Nav = ({cart}) => {
+
     return (
         <div className="navbar">
             <h2 className="logo">

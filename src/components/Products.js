@@ -4,7 +4,7 @@ import * as DATA from "../data/data";
 
 import '../styles/product.css';
 
-const Products = ({type='overview'}) => {
+const Products = ({type='overview', cart, updateCart}) => {
     
     const overview = (() => {
         return (<>
@@ -33,7 +33,7 @@ const Products = ({type='overview'}) => {
             <><header><h1>{headerFromID(type)}</h1></header>
                 <section className="product-container">
                 {obj.map(el => {
-                    return <ProductCard title={el.name} image={el.image} price={el.price} key={el.key} id={el.key}/>
+                    return <ProductCard title={el.name} image={el.image} price={el.price} key={el.key} id={el.key} data={el} cart={cart} updateCart={updateCart}/>
                 })}
                 </section></>
             : null
