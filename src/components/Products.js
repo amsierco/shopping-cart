@@ -31,7 +31,7 @@ const Products = ({type='overview'}) => {
         return (
             obj !== undefined ? 
             <><header><h1>{headerFromID(type)}</h1></header>
-                <section className="catagory-container">
+                <section className="product-container">
                 {obj.map(el => {
                     return <ProductCard title={el.name} image={el.image} price={el.price} key={el.key} id={el.key}/>
                 })}

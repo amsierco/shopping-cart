@@ -15,7 +15,8 @@ body,
   --primary: #19A7CE;
   --secondary: #AFD3E2;
   --accent: #146C94;
-  --background: #F6F1F1;
+  --background: #fff;
+  /* alt bg F6F1F1 */
   --gpad: 1rem 2rem 1rem 2rem;;
 
   background-color: var(--background);
@@ -32,6 +33,7 @@ a {
   height: 100vh;    
   overflow-x: hidden;
   overflow-y: scroll;
+  position: relative;
 }
 
 button {

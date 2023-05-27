@@ -34,7 +34,7 @@ import w4 from '../images/items/watches/ScreenShot2022-06-06at3.10.45PM_720x.jpg
 import e1 from '../images/items/essentials/The-Run-Calf-Sleeves-4.0-black-women-1_720x.jpg'
 import e2 from '../images/items/essentials/TheRunCalf4.0-white-men-1_720x.jpg'
 import e3 from '../images/items/essentials/280490_172_D2_Ghost_Lite_Crew_2_Pack_720x.jpg'
-import e4 from '../images/items/essentials/Peach1_bdbf602b-d30f-452f-ad04-5f47eca0f181_720x-2_720x.jpg'
+import e4 from '../images/items/essentials/DC3598-010-PHSFH001_1800x1800.jpg'
 
 //Nutrition
 import n1 from '../images/items/nutrition/GUEnergyGelSingle-RaspberryLemonade-medium_1_png_720x.jpg'
@@ -83,7 +83,7 @@ export const essentials = [
     { name: 'Women\'s CEP Calf Sleeve 4.0 WS205R', image: e1, price: 44.95, key: 'e1', },
     { name: 'Men\'s CEP Compression Calf Sleeve 4.0', image: e2, price: 40.00, key: 'e2', },
     { name: 'Brooks Ghost Lite Crew 2-Pack', image: e3, price: 24.00, key: 'e3', },
-    { name: 'Feetures Elite Max Cushion No Show Tab Socks', image: e4, price: 18.00, key: 'e4', }
+    { name: 'Nike Dri-Fit Aerobill Featherlight Perforated Running Cap', image: e4, price: 30.00, key: 'e4', }
 ];
 
 export const nutrition = [
