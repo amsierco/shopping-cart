@@ -22,7 +22,7 @@ const Cart = ({cart, updateCart, isCartActive, toggle}) => {
         },1000);
     }, []);
 
-    function removeFromCart(rmk = -1){
+    function updateCartQuantity(rmk, typ){
         let currentQuantitiy = 0;
         let temp = [...cart];
         let index = -1;
@@ -35,7 +35,7 @@ const Cart = ({cart, updateCart, isCartActive, toggle}) => {
         });
 
         let temp2 = {...temp[index]};
-        temp2.quantity = parseInt(currentQuantitiy)-1;
+        temp2.quantity = parseInt(currentQuantitiy)+(1*typ);
 
         if(temp2.quantity <= 0){
             temp.splice(index, 1);
@@ -57,11 +57,17 @@ const Cart = ({cart, updateCart, isCartActive, toggle}) => {
                     return(
                         <li key={el[3]} className="cart-item"> 
                             <img className="thumbnail" src={el[1]} alt=''></img>
-                            <div className="cart-name">{el[0]}</div>
-                            <div className="cart-item-price">
-                                {'$'+(el[2]*el[4]).toFixed(2)+' (x'+el[4]+')'}
+                            <div className='cart-wrapper'>
+                                <div className="cart-name">{el[0]}</div>
+                                <div className="cart-item-price">
+                                    {'$'+(el[2]*el[4]).toFixed(2)}
+                                </div>
+                                <div className='cart-alter-wrapper'>
+                                    <button className='cart-alter' onClick={() => updateCartQuantity(el[3], 1)}>+</button>
+                                    {el[4]}
+                                    <button className='cart-alter' onClick={() => updateCartQuantity(el[3], -1)}>-</button>
+                                </div>
                             </div>
-                            <button className='cart-remove' onClick={() => removeFromCart(el[3])}>Remove</button>
                         </li>
                     );
                 })}
@@ -71,7 +77,7 @@ const Cart = ({cart, updateCart, isCartActive, toggle}) => {
             <br/>
             <button className="checkout">Checkout</button>
             <br/><br/><br/>
-            <h2 className="disclaimer-title">Disclaimer!</h2>
+            <h2 className="disclaimer-title">Disclaimer</h2>
             <div className="disclaimer">
                 This is not a real store. All products listed are not actually for sale and cannot be purchased.
             </div>

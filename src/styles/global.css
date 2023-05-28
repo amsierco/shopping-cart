@@ -12,15 +12,13 @@ body,
   overflow: hidden;
 
   /* Variables */
-  --text: #000;
   --primary: #19A7CE;
   --secondary: #AFD3E2;
   --accent: #146C94;
-  /* alt bg F6F1F1 */
   --gpad: 1rem 2rem 1rem 2rem;;
 
   background-color: var(--background);
-  color: var(--text);
+  color: #000;
   font-family: Poppins, 'sans-serf', 'Times New Roman', Times, serif;
 }
 
@@ -29,8 +27,8 @@ a {
 }
 
 #root {
-  width: 100vw;
-  height: 100vh;    
+  display: block;
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
   position: relative;

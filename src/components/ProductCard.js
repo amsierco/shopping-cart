@@ -26,7 +26,6 @@ const ProductCard = ({title, image, price, id, data, cart, updateCart}) => {
             Object.assign(newData, quantity);
             updateCart([...cart, newData]);
         }
-
     }
 
     return (
@@ -41,8 +40,9 @@ const ProductCard = ({title, image, price, id, data, cart, updateCart}) => {
             </div>
             <div className="product-details">
                 <h2 className="product-title">{title}</h2>
-                <h3 className="product-price">{'$'+price}</h3>
-                <button onClick={clickHandler}>Add To Cart</button>
+                <h3 className="product-price">{'$'+price}
+                    <button onClick={clickHandler}>Add To Cart</button>
+                </h3>
             </div>
         </div>
     );
