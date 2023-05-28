@@ -6,8 +6,8 @@ import { useEffect } from 'react';
 const Cart = ({cart, updateCart, isCartActive, toggle}) => {
     const finalCost = (() => {
         let total = 0;
-        cart.map(p => [p.price]).map(el => {
-            return total += el[0];
+        cart.map(p => [p.price, p.quantity]).map(el => {
+            return total += (el[0]*el[1]);
         });
         return total.toFixed(2);
     })();
@@ -22,6 +22,30 @@ const Cart = ({cart, updateCart, isCartActive, toggle}) => {
         },1000);
     }, []);
 
+    function removeFromCart(rmk = -1){
+        let currentQuantitiy = 0;
+        let temp = [...cart];
+        let index = -1;
+
+        cart.map(p => [p.key, p.quantity]).forEach(el => {
+            if(el[0] === rmk){
+                currentQuantitiy =  el[1];
+                index = temp.findIndex(item => item.key === el[0]);
+            }
+        });
+
+        let temp2 = {...temp[index]};
+        temp2.quantity = parseInt(currentQuantitiy)-1;
+
+        if(temp2.quantity <= 0){
+            temp.splice(index, 1);
+            updateCart(temp);
+        } else {
+            temp[index] = temp2;
+            updateCart(temp);
+        }
+    }
+
     return (
         <div className={(isCartActive ? 'cart-container cart-active' : 'cart-container cart-deactive')}>
             <div className='close'>
@@ -35,9 +59,9 @@ const Cart = ({cart, updateCart, isCartActive, toggle}) => {
                             <img className="thumbnail" src={el[1]} alt=''></img>
                             <div className="cart-name">{el[0]}</div>
                             <div className="cart-item-price">
-                                {'$'+el[2]+' (x'+el[4]+')'}
+                                {'$'+(el[2]*el[4]).toFixed(2)+' (x'+el[4]+')'}
                             </div>
-                            <button className='cart-remove' >rm</button>
+                            <button className='cart-remove' onClick={() => removeFromCart(el[3])}>rm</button>
                         </li>
                     );
                 })}

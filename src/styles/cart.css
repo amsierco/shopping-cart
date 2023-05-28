@@ -7,6 +7,7 @@
     display: inline-block;
     width: 600px;
     height: fit-content;
+    background-color: #fff;
 }
 
 .cart-container .title {
@@ -119,4 +120,11 @@
 
 .cart-remove {
     cursor: pointer;
+}
+
+/* Media */
+@media (max-width: 750px){
+    .cart-container {
+        width: 400px;
+    }
 }

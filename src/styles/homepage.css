@@ -29,6 +29,7 @@
     align-items: center;
     justify-content: center;
     background: transparent;
+    text-align: center;
 }
 
 .hero-text * {

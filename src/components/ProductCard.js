@@ -2,22 +2,30 @@ const ProductCard = ({title, image, price, id, data, cart, updateCart}) => {
 
     const clickHandler = () => {
         let currentQuantitiy = 0;
-        let temp = cart;
+        let temp = [...cart];
+        let index = -1;
+        let dup = false;
 
         cart.map(p => [p.key, p.quantity]).forEach(el => {
             if(el[0] === id){
                 currentQuantitiy =  el[1];
 
-                let indx = temp.findIndex(item => item.key === el[0]);
-                temp.splice(indx, 1);
+                index = temp.findIndex(item => item.key === el[0]);
+                dup = true;
             }
         });
-        
-        updateCart(temp);
-        let newData = data;
-        let quantity = {quantity: 1+parseInt(currentQuantitiy)};
-        Object.assign(newData, quantity);
-        updateCart([...cart, newData]);
+
+        if(dup){
+            let temp2 = {...temp[index]};
+            temp2.quantity = 1+parseInt(currentQuantitiy);
+            temp[index] = temp2;
+            updateCart(temp);
+        } else {
+            let newData = data;
+            let quantity = {quantity: 1+parseInt(currentQuantitiy)};
+            Object.assign(newData, quantity);
+            updateCart([...cart, newData]);
+        }
 
     }
 
