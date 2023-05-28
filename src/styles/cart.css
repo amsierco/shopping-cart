@@ -15,6 +15,7 @@
 .cart-container .title {
     text-align: center;
     height: 5%;
+    min-height: fit-content;
 }
 
 .cart-overview {
@@ -51,11 +52,12 @@
 .checkout {
     border: 2px solid var(--primary);
     background-color: var(--primary);
-    padding: .2rem 1rem .2rem 1rem;
+    padding: .2rem 1rem 0 1rem;
     border-radius: .5rem;
     justify-content: center;
     cursor: pointer;
     width: 100%;
+    height: 5%;
 }
 
 .checkout:hover {
@@ -67,6 +69,7 @@
     text-align: center;
     color: red;
     border-bottom: 2px solid red;
+    height: fit-content;
 }
 
 .disclaimer {
@@ -77,6 +80,8 @@
     width: 100%;
     color: red;
     padding-top: .3rem;
+    height: fit-content;
+    margin-bottom: 1.4rem;
 }
 
 .close {
