@@ -10,12 +10,9 @@ const Homepage = () => {
                 <img src={background} alt="" className="hero-background"></img>
                 <div className='hero-text'>
                     <h1>Elevation Running</h1>
-                    <Link to='/products' className='catalog-link'>Expore our catalog</Link>
+                    <Link to='/products' className='catalog-link'>Expore the catalog</Link>
                 </div>
             </div>
-            {/* <div className='explore'>
-                Explore our catalog
-            </div> */}
         </main>
     </>);
 }
