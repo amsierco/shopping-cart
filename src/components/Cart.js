@@ -61,7 +61,7 @@ const Cart = ({cart, updateCart, isCartActive, toggle}) => {
                             <div className="cart-item-price">
                                 {'$'+(el[2]*el[4]).toFixed(2)+' (x'+el[4]+')'}
                             </div>
-                            <button className='cart-remove' onClick={() => removeFromCart(el[3])}>rm</button>
+                            <button className='cart-remove' onClick={() => removeFromCart(el[3])}>Remove</button>
                         </li>
                     );
                 })}
