@@ -72,11 +72,8 @@ const Cart = ({cart, updateCart, isCartActive, toggle}) => {
                     );
                 })}
             </ul>
-            <br/>
             <h4 className="cart-total-price">{'Total $' + finalCost}</h4>
-            <br/>
             <button className="checkout">Checkout</button>
-            <br/><br/><br/>
             <h2 className="disclaimer-title">Disclaimer</h2>
             <div className="disclaimer">
                 This is not a real store. All products listed are not actually for sale and cannot be purchased.
