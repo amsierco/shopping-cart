@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.4ddde0ab.css",
-    "main.js": "/shopping-cart/static/js/main.8c2c974c.js",
+    "main.css": "/shopping-cart/static/css/main.5108e646.css",
+    "main.js": "/shopping-cart/static/js/main.319bf44a.js",
     "static/media/malik-skydsgaard-unsplash.jpg": "/shopping-cart/static/media/malik-skydsgaard-unsplash.44802a67f1b6d1798e83.jpg",
     "static/media/benjamin-huggett-unsplash.jpg": "/shopping-cart/static/media/benjamin-huggett-unsplash.26deb6a38fb17a3e2e18.jpg",
     "static/media/hunter-bryant-unsplash.jpg": "/shopping-cart/static/media/hunter-bryant-unsplash.28c1fcc26ef67aadeec6.jpg",
@@ -33,11 +33,11 @@
     "static/media/221523_633_LF_Method_5in_Short_Tight_720x.jpg": "/shopping-cart/static/media/221523_633_LF_Method_5in_Short_Tight_720x.f342d4f1a8efa88cc9e2.jpg",
     "static/media/211329_001_LF_Sherpa_3in_Split_Short_720x.jpg": "/shopping-cart/static/media/211329_001_LF_Sherpa_3in_Split_Short_720x.daa4aeca9407d6e18b15.jpg",
     "index.html": "/shopping-cart/index.html",
-    "main.4ddde0ab.css.map": "/shopping-cart/static/css/main.4ddde0ab.css.map",
-    "main.8c2c974c.js.map": "/shopping-cart/static/js/main.8c2c974c.js.map"
+    "main.5108e646.css.map": "/shopping-cart/static/css/main.5108e646.css.map",
+    "main.319bf44a.js.map": "/shopping-cart/static/js/main.319bf44a.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ddde0ab.css",
-    "static/js/main.8c2c974c.js"
+    "static/css/main.5108e646.css",
+    "static/js/main.319bf44a.js"
   ]
 }
