@@ -1,22 +1,22 @@
 //Catagories
-import maleApparalCatag from '../images/catagories/hunter-bryant-unsplash.jpg'
-import femaleApparalCatag from '../images/catagories/clem-onojeghuo-unsplash.jpg'
+import maleapparelCatag from '../images/catagories/hunter-bryant-unsplash.jpg'
+import femaleapparelCatag from '../images/catagories/clem-onojeghuo-unsplash.jpg'
 import footwearCatag from '../images/catagories/malik-skydsgaard-unsplash.jpg'
 import watchesCatag from '../images/catagories/onur-binay-unsplash.jpg'
 import essentialsCatag from '../images/catagories/laura-chouette-unsplash.jpg'
 import nutritionCatag from '../images/catagories/towfiqu-barbhuiya-unsplash.jpg'
 
-//Male apparal
-import ma1 from '../images/items/male-apparal/211329_001_LF_Sherpa_3in_Split_Short_720x.jpg'
-import ma2 from '../images/items/male-apparal/211333_644_LF_Sherpa_7in_2in1_Short_720x.jpg'
-import ma3 from '../images/items/male-apparal/sxsp01l-gra_1form_f_sp22_x1450_9b666f0c-1788-4912-857a-354e6555a87d_720x.jpg'
-import ma4 from '../images/items/male-apparal/211455_644_LF_Atmosphere_Short_Sleeve_2_720x.jpg'
+//Male apparel
+import ma1 from '../images/items/male-apparel/211329_001_LF_Sherpa_3in_Split_Short_720x.jpg'
+import ma2 from '../images/items/male-apparel/211333_644_LF_Sherpa_7in_2in1_Short_720x.jpg'
+import ma3 from '../images/items/male-apparel/sxsp01l-gra_1form_f_sp22_x1450_9b666f0c-1788-4912-857a-354e6555a87d_720x.jpg'
+import ma4 from '../images/items/male-apparel/211455_644_LF_Atmosphere_Short_Sleeve_2_720x.jpg'
 
-//Female apparal
-import fa1 from '../images/items/female-apparal/221523_633_LF_Method_5in_Short_Tight_720x.jpg'
-import fa2 from '../images/items/female-apparal/ws01207pkw_40_720x.jpg'
-import fa3 from '../images/items/female-apparal/221605_620_LF_Sprint_Free_Tank_2_720x.jpg'
-import fa4 from '../images/items/female-apparal/221501_001_LF_Momentum_Thermal_Tight_720x.jpg'
+//Female apparel
+import fa1 from '../images/items/female-apparel/221523_633_LF_Method_5in_Short_Tight_720x.jpg'
+import fa2 from '../images/items/female-apparel/ws01207pkw_40_720x.jpg'
+import fa3 from '../images/items/female-apparel/221605_620_LF_Sprint_Free_Tank_2_720x.jpg'
+import fa4 from '../images/items/female-apparel/221501_001_LF_Momentum_Thermal_Tight_720x.jpg'
 
 //Footwear
 import fw1 from '../images/items/footwear/AL0A7R6M_220_R_HERO_720x.jpg'
@@ -43,22 +43,22 @@ import n3 from '../images/items/nutrition/NUUN-1200988_OrangeCitrus_A_1800x1800.
 import n4 from '../images/items/nutrition/mint-brownie-18ct-395830_1296x_d57936cd-ae17-4919-ad7f-5fc2e0bc12dc_720x.jpg'
 
 export const catagory = [
-    { title: "Men's Apparal", image: maleApparalCatag, key: "male-apparal" },
-    { title: "Women's Apparal", image: femaleApparalCatag, key: "female-apparal" },
+    { title: "Men's Apparel", image: maleapparelCatag, key: "male-apparel" },
+    { title: "Women's Apparel", image: femaleapparelCatag, key: "female-apparel" },
     { title: "Footwear", image: footwearCatag, key: "footwear" },
     { title: "Watches", image: watchesCatag, key: "watches" },
     { title: "Essentials", image: essentialsCatag, key: "essentials" },
     { title: "Nutrition", image: nutritionCatag, key: "nutrition" }
 ];
 
-export const maleApparal = [
+export const maleApparel = [
     { name: 'Men\'s Brooks Sherpa 3" Split Short', image: ma1, price: 54.00, key: 'ma1', },
     { name: 'Men\'s Brooks Sherpa 7" 2-in-1 Short ', image: ma2, price: 68.00, key: 'ma2', },
     { name: 'SAXX Hightail 5" 2N1 Short', image: ma3, price: 68.00, key: 'ma3', },
     { name: 'Men\'s Brooks Atmosphere Short Sleeve 2.0', image: ma4, price: 48.00, key: 'ma4', }
 ];
 
-export const femaleApparal = [
+export const femaleApparel = [
     { name: 'Women\'s Brooks Method 5" Short Tight', image: fa1, price: 54.00, key: 'fa1', },
     { name: 'Women\'s New Balance Accelerate Short 2.5 inch', image: fa2, price: 35.00, key: 'fa2', },
     { name: 'Women\'s Brooks Sprint Free Tank 2.0', image: fa3, price: 42.00, key: 'fa3', },

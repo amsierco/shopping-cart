@@ -18,8 +18,8 @@ const RouteSwitch = () => {
       <Routes>
         <Route path="/" element={<Homepage />}/>      
         <Route path="/products" element={<Products type={'overview'} cart={cart} updateCart={updateCart}/>}/>
-        <Route path="/products/male-apparal" element={<Products type={'male-apparal'} cart={cart} updateCart={updateCart}/>}/>
-        <Route path="/products/female-apparal" element={<Products type={'female-apparal'} cart={cart} updateCart={updateCart}/>}/>
+        <Route path="/products/male-apparel" element={<Products type={'male-apparel'} cart={cart} updateCart={updateCart}/>}/>
+        <Route path="/products/female-apparel" element={<Products type={'female-apparel'} cart={cart} updateCart={updateCart}/>}/>
         <Route path="/products/footwear" element={<Products type={'footwear'} cart={cart} updateCart={updateCart}/>}/>
         <Route path="/products/watches" element={<Products type={'watches'} cart={cart} updateCart={updateCart}/>}/>
         <Route path="/products/essentials" element={<Products type={'essentials'} cart={cart} updateCart={updateCart}/>}/>

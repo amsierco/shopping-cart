@@ -13,10 +13,12 @@ const Nav = ({cart, isCartActive, toggle}) => {
 
     return (
         <div className="navbar">
-            <h2 className="logo">
-                <FontAwesomeIcon icon={faMountainSun} />
-                <div>Elevation Running</div>
-            </h2>
+            <Link to="/">
+                <h2 className="logo">
+                    <FontAwesomeIcon icon={faMountainSun} />
+                    <div>Elevation Running</div>
+                </h2>
+            </Link>
             <nav className="nav-links">
                 <Link to="/">Home</Link>
                 <Link to="/products">Products</Link>

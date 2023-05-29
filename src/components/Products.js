@@ -42,8 +42,8 @@ const Products = ({type='overview', cart, updateCart}) => {
     return (<>
         <main className="products">
             {type === 'overview' ? overview : null}
-            {type === 'male-apparal' ? specificProduct(DATA.maleApparal) : null}
-            {type === 'female-apparal' ? specificProduct(DATA.femaleApparal) : null}
+            {type === 'male-apparel' ? specificProduct(DATA.maleApparel) : null}
+            {type === 'female-apparel' ? specificProduct(DATA.femaleApparel) : null}
             {type === 'footwear' ? specificProduct(DATA.footwear) : null}
             {type === 'watches' ? specificProduct(DATA.watches) : null}
             {type === 'essentials' ? specificProduct(DATA.essentials) : null}
